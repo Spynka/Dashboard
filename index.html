@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORKDAY FOCUS • Персональный организатор</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <header class="dashboard-header">
+            <div class="header-main">
+                <h1 class="logo">WORKDAY<span class="logo-accent">FOCUS</span></h1>
+                <div class="date-display" id="current-date">Понедельник, 22 октября</div>
+            </div>
+        </header>
+
+        <!-- Основная сетка виджетов -->
+        <main class="dashboard-main" id="dashboard-container">
+            <section class="content-primary">
+                <div class="widget-slot" id="widget-todo">
+                </div>
+                <div class="widget-slot" id="widget-weather">
+                </div>
+            </section>
+
+            <section class="content-secondary">
+                <div class="widget-slot" id="widget-focus">
+                </div>
+                <div class="widget-slot" id="widget-dictionary">
+                </div>
+            </section>
+
+            <section class="content-wide">
+                <div class="widget-slot" id="widget-calendar">
+                </div>
+            </section>
+        </main>
+
+        <!-- Панель управления -->
+        <footer class="dashboard-controls">
+            <button class="control-btn" id="add-todo-btn" data-widget="todo">
+                <span class="btn-icon">📝</span>
+                <span class="btn-text">Задачи</span>
+            </button>
+            <button class="control-btn" id="add-focus-btn" data-widget="focus">
+                <span class="btn-icon">⏱️</span>
+                <span class="btn-text">Фокус</span>
+            </button>
+            <button class="control-btn" id="add-calendar-btn" data-widget="calendar">
+                <span class="btn-icon">📅</span>
+                <span class="btn-text">Календарь</span>
+            </button>
+            <button class="control-btn" id="add-weather-btn" data-widget="weather">
+                <span class="btn-icon">🌤️</span>
+                <span class="btn-text">Погода</span>
+            </button>
+            <button class="control-btn" id="add-dictionary-btn" data-widget="dictionary">
+                <span class="btn-icon">📚</span>
+                <span class="btn-text">Словарь</span>
+            </button>
+        </footer>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
